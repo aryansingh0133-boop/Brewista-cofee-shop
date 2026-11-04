@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brewista Coffee House</title>
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+  integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="page5.css">
+
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+
+  <div class="top-bar">
+
+      <div class="top-left">
+          <i class="fa-solid fa-truck"></i>
+          Free delivery on orders above ₹299
+      </div>
+
+      <div class="top-right">
+
+          <span>
+              <i class="fa-regular fa-clock"></i>
+              Mon - Sun : 8:00 AM - 10:00 PM
+          </span>
+
+          <div class="social-icons">
+
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-p>interest-p"></i>
+
+          </div>
+
+      </div>
+
+  </div>
+
+
+  <!-- HEADER -->
+
+  <header class="nav2">
+
+      <div class="logo">
+
+          <!-- <i class="fa-solid fa-mug-hot"></i> -->
+           <div id="i"></div>
+
+          <div>
+
+              <h1>Brewista</h1>
+              <p>Coffee House</p>
+
+          </div>
+
+      </div>
+
+
+      <nav>
+
+          <a href="index.html" >Home</a>
+          <a href="page2.html">About Us</a>
+          <a href="page3.html" >Menu</a>
+          <a href="page4.html" >Gallery</a>
+          <a href="page5.html" class="active">Cart<i class="fa-solid fa-cart-shopping" style="color: rgb(80, 58, 30);"></i></a>
+          <a onclick="goContact()">
+            Contact Us
+          </a>
+
+      </nav>
+
+
+      <button class="order-btn">
+          Order Now
+      </button>
+
+  </header>
+
+
+<!--  main body start from here -->
+
+<main>
+
+
+<div class="container">
+
+    <h1>Your Cart</h1>
+
+    <!-- CART ITEMS -->
+
+    <div class="cart-wrapper">
+
+        <div class="cart-left">
+
+            <!-- ITEM -->
+
+            <!-- <div class="cart-item">
+
+                <div class="product">
+
+                    <img src="images/capachino.webp">
+
+                    <div>
+                        <h3>Cappuccino</h3>
+                        <p>Smooth and classic cappuccino</p>
+                    </div>
+
+                </div>
+
+                <h4 class="price">150</h4>
+
+                <div class="quantity">
+
+                    <button class="minus">-</button>
+
+                    <span>1</span>
+
+                    <button class="plus">+</button>
+
+                </div>
+
+                <h4 class="total">₹150</h4>
+
+                <i class="fa-regular fa-trash-can delete"></i>
+
+            </div>
+
+            ITEM
+
+            <div class="cart-item">
+
+                <div class="product">
+
+                    <img src="images/browni.png">
+
+                    <div>
+                        <h3>Brownie</h3>
+                        <p>Chocolate fudge brownie</p>
+                    </div>
+
+                </div>
+
+                <h4 class="price">120</h4>
+
+                <div class="quantity">
+
+                    <button class="minus">-</button>
+
+                    <span>1</span>
+
+                    <button class="plus">+</button>
+
+                </div>
+
+                <h4 class="total">₹120</h4>
+
+                <i class="fa-regular fa-trash-can delete"></i>
+
+            </div>
+
+            ITEM
+
+            <div class="cart-item">
+
+                <div class="product">
+
+                    <img src="images/icedcoffee.png">
+
+                    <div>
+                        <h3>Iced Coffee</h3>
+                        <p>Cold coffee with ice</p>
+                    </div>
+
+                </div>
+
+                <h4 class="price">140</h4>
+
+                <div class="quantity">
+
+                    <button class="minus">-</button>
+
+                    <span>2</span>
+
+                    <button class="plus">+</button>
+
+                </div>
+
+                <h4 class="total">₹280</h4>
+
+                <i class="fa-regular fa-trash-can delete"></i>
+
+            </div> -->
+
+            <!-- COUPON -->
+
+            <div class="coupon-box">
+
+                <div>
+
+                    <h3>Have Coupon?</h3>
+
+                    <div class="coupon-input">
+
+                        <input type="text"
+                        id="coupon"
+                        placeholder="Enter coupon">
+
+                        <button onclick="applyCoupon()">
+                            Apply
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <button class="continue-btn">
+                    Continue Shopping
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- SUMMARY -->
+
+        <div class="summary">
+            <div id="note">Free delivery is available only on max ₹200 of order</div>
+
+            <h2>Order Summary</h2>
+
+            <div class="line">
+                <p>Subtotal</p>
+                <span id="subtotal">₹550</span>
+            </div>
+
+            <div class="line">
+                <p>Delivery</p>
+                <span id="dly">₹0</span>
+            </div>
+
+            <div class="line">
+                <p>Discount</p>
+                <span id="discount">₹0</span>
+            </div>
+
+            <hr>
+
+            <div class="line total-line">
+
+                <h3>Total</h3>
+
+                <h2 id="finalTotal">₹550</h2>
+
+            </div>
+
+            <button class="checkout-btn"
+            onclick="openPopup()">
+                Proceed To Checkout
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- RECOMMENDED -->
+
+    <div class="recommend">
+
+        <h1>You May Also Like</h1>
+
+        <div class="scroll-wrapper">
+
+            <button class="scroll-btn left"
+            onclick="scrollLeftFun()">
+                ❮
+            </button>
+
+            <div class="products"
+            id="productScroll">
+
+                <div class="card">
+
+                    <img src="images/mocha2.png">
+
+                    <h3>Mocha</h3>
+
+                    <p>₹170</p>
+
+                    <button>Add To Cart</button>
+
+                </div>
+
+                <div class="card">
+
+                    <img src="images/caremal.png">
+
+                    <h3>Caramel</h3>
+
+                    <p>₹180</p>
+
+                    <button>Add To Cart</button>
+
+                </div>
+
+                <div class="card">
+
+                    <img src="images/cheezcake.png">
+
+                    <h3>Cheesecake</h3>
+
+                    <p>₹150</p>
+
+                    <button>Add To Cart</button>
+
+                </div>
+
+                <div class="card">
+
+                    <img src="images/GarlicBread.png">
+
+                    <h3>Garlic Bread</h3>
+
+                    <p>₹120</p>
+
+                    <button>Add To Cart</button>
+
+                </div>
+
+                <div class="card">
+
+                    <img src="images/Tiramisu.png">
+
+                    <h3>Tiramisu</h3>
+
+                    <p>₹170</p>
+
+                    <button>Add To Cart</button>
+
+                </div>
+
+            </div>
+
+            <button class="scroll-btn right"
+            onclick="scrollRightFun()">
+                ❯
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- POPUP -->
+
+<div class="popup"
+id="popup">
+
+    <div class="popup-content">
+
+        <!-- STEP 1 -->
+
+        <div id="step1">
+
+            <h2>Delivery Details</h2>
+
+            <input type="text"
+            id="fullName"
+            placeholder="Full Name">
+
+            <input type="text"
+            id="phone"
+            placeholder="Phone Number">
+
+            <input type="number" id="pincode"
+            placeholder="enter pincode">
+
+            <textarea
+            id="address"
+            placeholder="Enter Address"></textarea>
+
+            <!-- MAP -->
+
+            <iframe
+            src="https://maps.google.com/maps?q=india&t=&z=13&ie=UTF8&iwloc=&output=embed">
+            </iframe>
+
+            <button onclick="nextStep()">
+                Next
+            </button>
+
+        </div>
+
+        <!-- STEP 2 -->
+
+        <div id="step2"
+        style="display:none;">
+
+            <h2>Select Payment</h2>
+
+            <div class="payment-option">
+
+                <input type="radio"
+                name="pay"
+                onclick="selectPayment('cod')">
+
+                Cash On Delivery
+
+            </div>
+
+            <div class="payment-option">
+
+                <input type="radio"
+                name="pay"
+                onclick="selectPayment('card')">
+
+                Pay With Card
+
+            </div>
+
+            <div class="payment-option">
+
+                <input type="radio"
+                name="pay"
+                onclick="selectPayment('qr')">
+
+                QR Payment
+
+            </div>
+
+            <!-- CARD BOX -->
+
+            <div id="cardBox"
+            style="display:none;">
+
+                <input type="text"
+                placeholder="Card Number">
+
+                <input type="text"
+                placeholder="Card Holder Name">
+
+                <input type="text"
+                placeholder="Expiry Date">
+
+                <input type="text"
+                placeholder="CVV">
+
+            </div>
+
+            <!-- QR IMAGE -->
+
+            <!-- CHANGE QR IMAGE HERE -->
+
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACUCAMAAABGFyDbAAAAb1BMVEX///8AlogAAAAAiXnn7+4Aj3+szsiXl5fOzs7IyMjb29vY2Nj4+PguLi6QkJBiYmIzMzMnJydKSkrt7e2xsbFFRUV8fHzn5+fh4eFycnITExNdXV0+Pj6np6e4uLiGhoZUVFSfn58cHBydxr9qamrjrdYlAAAF3klEQVR4nO2ca4OiOgyGOZydlTvIXVBA1v//G7cJ0gK2SkFGne37qaUQn4HSpkkZ7b+3lPZqAL4UlowUlowUlowUlow+Auvr/5fpS4z19efXq+T8/hJj/dZeJoWlsBTWp2Bl3u6RvBxOPImaT9CazzCTSWAZ+mOZcOJR1HqEVnOGGWMLrFDUGiqsW6wXPMTAE+jcUqwzqe7wljU7UmqgFO7gHIrVnkV2gkVYviN6mV2KhUqh6kHJg1JKGxDLFVlxfIX1T2NFp3ikSIR1qeK4Sn3fL88crGhs5RStxLIn77MtwtLpLWNiWDwza7Cssbm9tQzL2o/tWArrbbEOhmGY1tth6UVRcAeIF2OBFNYnYtX7IAhaONaSgptGeZ5Hr8fSHMfppkOPFLUTlI5vgAW6YhHFUAoVFuk8S7Ha52LlRTBUkouwdqTfu3VuWfmOg5UnIzNFvhJLi8bSRFgOaXTqdr93Ww4Wz8zW3unkSeo8LI4U1rdgCTTA6up9iWAV4ENMsER2lmEVe5F0itWQPq7HeKPI6W1N5p3sPMbShWaKRVgPhFgJlGL6/Hjj1gNtF7FRWDJYJ/AbaijV1IPYBMuxH8uhWEEThg2+nS6UAoo128xMrNm6Hw2UkcJ6GVbyrVh2kPSCalb2tRD9reaYJEeM3RgmWUf7FAZW1YZHsWw4rxGBOClpDmwJrMEAAdXc7Wudd4qzjzAGMRm39kKsEpoXjluIFfS1OaERntPMxVo2Vb89VsbWLdgVChFWLYXVyGJFcVVVuFTQ0wMRVDuhF16RepxR+9fYKTlmiLAyNEN1wYtNMBNJYE1u2THS7olFmjURFm9BNtYCrCS7sSKLxVm+/lQsuYeIjk1CLXCx8kVYee15Xk1TWXUtSnKhwjGWAWen0HCYYEHqrMZSSk3nEljdyof+UObqD8ULMusTLChFk2l0xTqRDafrsTKFdQ+rhapdbIZV33bYQZeHpHCnCm8Pe0sQBrs3w1rT5SdYUOo67OT1nkSaD9o9ZTwLa7AcanQyGAoD4GKsZcPpO2OVFCuTeoj3saLjcizrQryPHWA54NOcsKNjCQfWczVybE7gqyBvAqUTuzPguVTsp8FCvNaxQU2zuUzTkC4c242P4ShR0KoD1T39c+TdQCZrLhYLjUywmHeKWAHtAfJO8z+NJb0gY8r3CV9s+WpibznDUjU1rjLx12D5moRYdThY0svX2cL3j716LNKcsD8MYbJbrLGeHxqJOVgsBoHdIFFY2jDS/AALR018A1ZgzY4uHkKic06qXb9P+iDlMbueZlV4j0zLtg3SGpZQsm8TJE8N6WLu4kDHBqyehJdAczftr5iq52CheOtErqB1tQehsGSw5qSiUJBzbess79SlonRmQYiFV8jE5Wcn7lCDnF3RJ+703sJwVh1jkamanLtxmpMNWfoAS9PuYumbZ18/HYv68htuOKDHnXqC5JLOfslIS/dWY99HrAbyrgZpyLbbnlG6fUs7pkpyy7Ji2KqEJx9NUkXXyiEFK8fLliWF52xmuZ/zGcQTJ4E7duImW3/mbuOfhjkV1j0sN6O7ISZY5mZYZzKLRJMVf5cUzvsJyeh3JLldji2nWjD5zMRimf0JFhNLF6zxTp+PRSfsNb7852MRJyDW+p2U1Iu4YtE+bu1716LDGrgjW2DZkBROy7L00UU/0FU1juh2Q1ouiIEHGVbZq5FOCj9pY/ogKcywmMWX7pfvHumPx1r1iQjLkLGH2EUDmWO9yQc1aen7pUeOV/4Yy258328oVnaBKn5LA6XL2rvFFcPi7XZDVfR3B0lhKEWTj/Q2weJtK0N9Ryrq52Cxh4gZMut5GbI5n00ilg8HU/juN6UZMvaRMH5SFp3hq2CGVW/7pTBzA3lf3PG0OkO2JdbGEZs3xWKDEKZWcQ37IM2JroZ9c3ybj+M9pDThuurmJ4eK4BLvdr/HB/8rAYWlsBTWK7Fe98+Ifv0RY73pv256HyksGSksGSksGSksGSksGf0Fzfr1yFt92LwAAAAASUVORK5CYII="
+            id="qrBox"
+            class="qr"
+            style="display:none;">
+
+            <button onclick="placeOrder()">
+                Place Order
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- CELEBRATION -->
+
+<div class="celebration"
+id="celebration">
+
+    <img src="https://cdn-icons-png.flaticon.com/512/3468/3468378.png">
+
+    <img src="https://cdn-icons-png.flaticon.com/512/3468/3468378.png">
+
+    <img src="https://cdn-icons-png.flaticon.com/512/3468/3468378.png">
+
+    <img src="https://cdn-icons-png.flaticon.com/512/3468/3468378.png">
+
+</div>
+
+
+
+
+</main>
+
+<!-- main body close at here -->
+
+
+<!--  footer section start from here -->
+
+      <div class="y88h">
+
+        <!-- LOGO -->
+        <div class="u12j">
+
+            <div class="mug">
+                <i class="fa-solid fa-mug-saucer"></i>
+
+                <div>
+                    <h3>Brewista</h3>
+                    <span>COFFEE HOUSE</span>
+                </div>
+            </div>
+
+            <p>
+                Brewing happiness, one cup at a time.
+            </p>
+
+        </div>
+
+
+
+        <!-- LINKS -->
+        <div class="o90l">
+
+            <h4>Quick Links</h4>
+
+            <a href="index.html">Home</a>
+            <a href="page2.html">About Us</a>
+            <a href="page3.html">Menu</a>
+            <a href="page4.html">Gallery</a>
+
+        </div>
+
+
+
+        <!-- CUSTOMER -->
+        <div class="p66m">
+
+            <h4>Customer Service</h4>
+
+            <a href="page6.html">Contact Us</a>
+            <a href="#">Shipping & Delivery</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+
+        </div>
+
+
+
+        <!-- CONTACT -->
+        <div class="a77n">
+
+            <h4>Contact Info</h4>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +91 98xxx xxxxx
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                hello@brewista.com
+            </p>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                123 Coffee Street, xyz, India
+            </p>
+
+        </div>
+
+
+
+        <!-- SOCIAL -->
+        <div class="s45b">
+
+            <h4>Follow Us</h4>
+
+            <div class="d54c">
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- COPYRIGHT -->
+    <div class="g87z">
+        © 2026 Brewista Coffee House. All Rights Reserved.
+    </div>
+
+</footer>
+  <!-- <footer>
+    <div class="footer">
+        <div id="centrebox"></div>
+        <div id="middlebox"></div>
+        <div id="endbox"></div>
+    </div>
+  </footer> -->
+
+<div id="toast">
+    <i id="toastIcon" class="fa-solid fa-circle-check"></i>
+    <span id="toastText"></span>
+</div>
+
+<script src="page5.js"></script>
+<script src="page52.js"></script>
+</body>
+</html>
