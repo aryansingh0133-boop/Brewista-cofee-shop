@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brewista Coffee House</title>
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+  integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="file.css">
+
+</head>
+
+<body>
+
+  <!-- TOP BAR -->
+
+  <div class="top-bar">
+
+      <div class="top-left">
+          <i class="fa-solid fa-truck"></i>
+          Free delivery on orders above ₹299
+      </div>
+
+      <div class="top-right">
+
+          <span>
+              <i class="fa-regular fa-clock"></i>
+              Mon - Sun : 8:00 AM - 10:00 PM
+          </span>
+
+          <div class="social-icons">
+
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-pinterest-p"></i>
+
+          </div>
+
+      </div>
+
+  </div>
+
+
+  <!-- HEADER -->
+
+  <header class="nav2">
+
+      <div class="logo">
+
+          <!-- <i class="fa-solid fa-mug-hot"></i> -->
+           <div id="i"></div>
+
+          <div>
+
+              <h1>Brewista</h1>
+              <p>Coffee House</p>
+
+          </div>
+
+      </div>
+
+
+      <nav>
+
+          <a href="file.html" class="active">Home</a>
+          <a href="page2.html">About Us</a>
+          <a href="page3.html">Menu</a>
+          <a href="page4.html">Gallery</a>
+          <a href="page5.html" id="catfill">Cart<i class="fa-solid fa-cart-shopping" style="color: rgb(80, 58, 30);"></i><sup id="cartsup"></sup></a>
+          <a onclick="goContact()">
+            Contact Us
+          </a>
+
+
+      </nav>
+
+
+      <button class="order-btn">
+          Order Now
+      </button>
+
+  </header>
+
+
+  <!-- HERO SECTION -->
+
+
+   <main>
+
+  <section class="hero">
+
+      <div class="hero-content">
+
+          <h1>
+              Good Coffee, <br>
+              <span>Great Moments</span>
+          </h1>
+
+          <p>
+              Every cup tells a story. Enjoy the perfect blend of aroma, taste and happiness.
+          </p>
+
+          <div class="hero-buttons">
+
+              <button class="dark-btn">
+                  Explore Menu
+              </button>
+
+              <button class="light-btn">
+                  Learn More
+              </button>
+
+          </div>
+
+
+          <div class="hero-features">
+
+              <div>
+                  <i class="fa-solid fa-award"></i>
+                  100% Premium Quality Beans
+              </div>
+
+              <div>
+                  <i class="fa-solid fa-mug-hot"></i>
+                  Freshly Brewed For You
+              </div>
+
+              <div>
+                  <i class="fa-solid fa-heart"></i>
+                  Made With Love And Passion
+              </div>
+
+          </div>
+
+      </div>
+
+
+      <div class="hero-image">
+
+          <img src="hero.jpg" alt="">
+
+      </div>
+
+  </section>
+
+  <div class="main">
+     <div id="popular">our popular picks<br>
+      <div class="line"><span><i class="fa-solid fa-heart" style="color: rgb(80, 58, 30);"></i></span></div>
+     </div>
+     <div class="container">
+        <div class="card">
+            <img src="images/capachino.webp">
+            <h3>Cappuccino</h3>
+           <p>&#8377 150</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="images/iced.png">
+            
+            <h3>Iced Coffe</h3>
+            <p>&#8377 140</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="images/latte.avif">
+            <h3>Cafe Latte</h3>
+            <p>&#8377 160</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+             <img src="images/images.jpg">
+            <h3>Mocha</h3>
+            <p>&#8377 170</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="card">
+            <img src="images/caremal.png">
+           <h3> Caramel Macchiato</h3>
+            <p>&#8377 180</p>
+            <button >Add to Cart</button>
+        </div>
+         <div class="card">
+            <img src="images/browni.png">
+            <h3>Chocolate Brownie</h3>
+            <P>&#8377 200</P>
+            <button >Add to Cart</button>
+        </div>
+           
+     </div>
+</div>
+
+<div id="bottomban">
+    <p id="text1">weekend special offer</p>
+    <p id="text2">Get 20% OFF</p>
+    <p id="text3">On All Cofee Order Above &#8377 299 </p><br>
+    <button id="banbutton" type="button"><a id="banhr"  href="page3.html">Order Now</a></button>
+</div>
+
+
+<!--info box-->
+
+
+<section class="coffee-section">
+
+
+
+  <!-- WHY CHOOSE US -->
+
+
+  <div class="boxac">
+    <h2>Why Choose Us?</h2>
+
+    <div class="item">
+      <i class="fa-regular fa-heart"></i>
+      <div>
+        <h3>Premium Quality</h3>
+        <p>We use 100% premium Arabica beans.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <i class="fa-regular fa-clock"></i>
+      <div>
+        <h3>Freshly Brewed</h3>
+        <p>Every cup is brewed fresh for you.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <i class="fa-solid fa-truck"></i>
+      <div>
+        <h3>Fast Delivery</h3>
+        <p>Get your favorite coffee delivered fast.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <i class="fa-solid fa-earth-americas"></i>
+      <div>
+        <h3>Cozy Environment</h3>
+        <p>Enjoy a warm and relaxing coffee experience.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- COFFEE PROCESS -->
+
+
+
+  <div class="boxac">
+    <h2>Our Coffee Process</h2>
+
+    <div class="process">
+      <div id="pr1"><i class="fa-solid fa-seedling"></i></div>
+      <div>
+        <h3>Select Beans</h3>
+        <p>We handpick the best quality beans.</p>
+      </div>
+    </div>
+
+    <div class="process">
+      <div id="pr1"><i class="fa-solid fa-fire"></i></div>
+      <div>
+        <h3>Roast</h3>
+        <p>Roasted to perfection for rich aroma.</p>
+      </div>
+    </div>
+
+    <div class="process">
+      <div id="pr1"><i class="fa-solid fa-mug-hot"></i></div>
+      <div>
+        <h3>Brew</h3>
+        <p>Expertly brewed to bring out the flavor.</p>
+      </div>
+    </div>
+
+    <div class="process">
+      <div id="pr1"><i class="fa-solid fa-bell-concierge"></i></div>
+      <div>
+        <h3>Serve</h3>
+        <p>Served with love in every cup.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- ACHIEVEMENTS -->
+
+
+  <div class="boxac">
+    <h2>Our Achievements</h2>
+
+    <div class="achievement">
+        <div id="achieve1"><i class="fa-solid fa-user-group"></i></div>
+      <h1>10K+</h1>
+      <p>Happy Customers</p>
+    </div>
+
+    <div class="achievement">
+      <div id="achieve1"><i class="fa-solid fa-mug-hot"></i></div>
+      <h1>25+</h1>
+      <p>Coffee Varieties</p>
+    </div>
+
+    <div class="achievement">
+      <div id="achieve1"><i class="fa-solid fa-medal"></i></div>
+      <h1>15+</h1>
+      <p>Awards Won</p>
+    </div>
+
+    <div class="achievement">
+      <div id="achieve1"><i class="fa-solid fa-award"></i></div>
+      <h1>5+</h1>
+      <p>Years of Experience</p>
+    </div>
+  </div>
+
+
+
+  <!-- SPECIAL COFFEE -->
+
+
+
+  <div class="special-box">
+    
+    <h2>Special Coffee of the Day</h2>
+    <div class="specialimg">
+    <div id="specialimg"></div>
+     <div class="specialimg">
+    <h3>Hazelnut Delight</h3>
+    <p>A perfect blend of hazelnut and rich espresso.</p>
+     </div>
+     <div id="sp-button">
+        <div>
+    <h4>₹190</h4>
+    </div>
+    <button>Order Now</button>
+    </div>
+  </div>
+
+</section>
+
+
+
+<!--review or booking box-->
+<div class="booking-section">
+
+    <!-- LEFT REVIEW SIDE -->
+    <div class="review-container">
+
+        <h2>What Our Customers Say</h2>
+
+        <div class="heading-line">
+            <span></span>
+            <i class="fa-solid fa-location-dot"></i>
+            <span></span>
+        </div>
+
+        <div class="review-box">
+
+            <button class="arrow left">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <div class="review-content">
+
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=500&auto=format&fit=crop"
+                alt="customer">
+
+                <div class="review-text">
+
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <p class="message">
+                        "The coffee is amazing and the ambience is so warm.
+                        My new favorite place!"
+                    </p>
+
+                    <h4>- Ananya Verma</h4>
+
+                </div>
+
+            </div>
+
+            <button class="arrow right">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+        </div>
+
+        <div class="dots">
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </div>
+
+
+
+    <!-- RIGHT BOOKING SIDE -->
+    <div class="form-container">
+
+        <h2>Book Your Table</h2>
+
+        <div class="heading-line">
+            <span></span>
+            <i class="fa-solid fa-location-dot"></i>
+            <span></span>
+        </div>
+
+        <div class="form-box">
+
+            <div class="form-content">
+
+                <div class="input-group">
+                    <input type="text" placeholder="Your Name">
+                    <input type="date">
+                </div>
+
+                <div class="input-group">
+                    <select>
+                        <option>Time</option>
+                        <option>10:00 AM</option>
+                        <option>12:00 PM</option>
+                        <option>03:00 PM</option>
+                    </select>
+
+                    <select>
+                        <option>No. of Guests</option>
+                        <option>1 Guest</option>
+                        <option>2 Guests</option>
+                        <option>4 Guests</option>
+                    </select>
+                </div>
+
+                <button class="book-btn">
+                    Book Now
+                </button>
+
+            </div>
+
+            <div class="image-side">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1200&auto=format&fit=crop"
+                alt="cafe">
+            </div>
+
+        </div>
+
+    </div>
+
+  </div>
+
+
+
+<!-- <div class="re-bo">
+    <div id="rev">
+        <div id="customer">
+            <div id="cimg"></div>
+            <div id="celement"></div>
+        </div>
+    </div>
+    <div id="rev">
+    </div>
+</div>-->
+<div class="g72x">
+
+    <h2 class="t91q">Our Coffee Gallery</h2>
+
+    <div class="l55w">
+        <span></span>
+        <i class="fa-solid fa-location-dot"></i>
+        <span></span>
+    </div>
+
+    <div class="k88m">
+
+        <div class="b11n">
+            <img src="images/img1.jpg" alt="">
+        </div>
+
+        <div class="b11n">
+            <img src="images/img2.jpg" alt="">
+        </div>
+
+        <div class="b11n">
+            <img src="images/img3.jpg" alt="">
+        </div>
+
+        <div class="b11n">
+            <img src="images/img4.jpg" alt="">
+        </div>
+
+        <div class="b11n">
+            <img src="images/img5.jpg" alt="">
+        </div>
+
+        <div class="b11n">
+            <img src="images/img6.jpg" alt="">
+        </div>
+
+    </div>
+
+  </div>
+</main> 
+
+<!--footer are -->
+
+<footer class="f91x">
+
+    <!-- TOP NEWSLETTER -->
+    <div class="n44v">
+
+        <div class="q11a">
+
+            <div class="w22s">
+                <i class="fa-solid fa-mug-hot"></i>
+            </div>
+
+            <div class="e33d">
+                <h2>Join Our Coffee Club</h2>
+                <p>
+                    Subscribe to get exclusive offers and latest updates.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="r55f">
+
+            <input type="email" placeholder="Enter your email">
+
+            <button>
+                Subscribe
+            </button>
+
+        </div>
+
+        <div class="t77g">
+            <img src="images/coffee-cup.png" alt="">
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- FOOTER CONTENT -->
+    <div class="y88h">
+
+        <!-- LOGO -->
+        <div class="u12j">
+
+            <div class="i21k">
+                <i class="fa-solid fa-mug-saucer"></i>
+
+                <div>
+                    <h3>Brewista</h3>
+                    <span>COFFEE HOUSE</span>
+                </div>
+            </div>
+
+            <p>
+                Brewing happiness, one cup at a time.
+            </p>
+
+        </div>
+
+
+
+        <!-- LINKS -->
+        <div class="o90l">
+
+            <h4>Quick Links</h4>
+
+            <a href="file.html">Home</a>
+            <a href="page2.html">About Us</a>
+            <a href="page3.html">Menu</a>
+            <a href="page4.html">Gallery</a>
+
+        </div>
+
+
+
+        <!-- CUSTOMER -->
+        <div class="p66m">
+
+            <h4>Customer Service</h4>
+
+            <a href="page6.html">Contact Us</a>
+            <a href="#">Shipping & Delivery</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+
+        </div>
+
+
+
+        <!-- CONTACT -->
+        <div class="a77n">
+
+            <h4>Contact Info</h4>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +91 98xxx xxxxx
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                hello@brewista.com
+            </p>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                123 Coffee Street, xyz, India
+            </p>
+
+        </div>
+
+
+
+        <!-- SOCIAL -->
+        <div class="s45b">
+
+            <h4>Follow Us</h4>
+
+            <div class="d54c">
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- COPYRIGHT -->
+    <div class="g87z">
+        © 2026 Brewista Coffee House. All Rights Reserved.
+    </div>
+
+</footer>
+  <!-- <footer>
+    <div class="footer">
+        <div id="centrebox"></div>
+        <div id="middlebox"></div>
+        <div id="endbox"></div>
+    </div>
+  </footer> -->
+
+  <div id="toast">
+    <i id="toastIcon" class="fa-solid fa-circle-check"></i>
+    <span id="toastText"></span>
+</div>
+
+  <script src="script12.js"></script>
+  <script src="script11.js"></script>
+  <!-- <script src="page52.js"></script> -->
+
+
+</body>
+</html>
