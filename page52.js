@@ -15,7 +15,9 @@ addBtns.forEach((btn) => {
         // Check if item already exists
         let alreadyItem = [...document.querySelectorAll(".cart-item")].find(item => {
             return item.querySelector("h3").innerText === title;
+            
         });
+        
 
         // Item already exists
         if (alreadyItem) {
@@ -30,7 +32,9 @@ addBtns.forEach((btn) => {
                 product.qty++;
                 saveCart();
             }
+            
             total.innerText = "₹" + (Number(qty.innerText) * price);
+            updateSummary(); // Order Summary update
 
             showToast(title + " quantity updated", "success");
             return;
@@ -74,6 +78,7 @@ addBtns.forEach((btn) => {
         });
 
 saveCart();
+updateSummary();
 
         // ✅ Toast for new item
         showToast(title + " added to cart", "success");
@@ -106,6 +111,7 @@ if (product) {
     product.qty = Number(qty.innerText);
     saveCart();
 }
+updateSummary();
 
         // ✅ Toast
         showToast(title + " quantity increased", "success");
@@ -128,6 +134,7 @@ if (product) {
     product.qty = Number(qty.innerText);
     saveCart();
 }
+updateSummary();
 
             // ✅ Toast
             showToast(title + " quantity decreased", "error");
@@ -141,6 +148,7 @@ if (product) {
         cart = cart.filter(item => item.title !== title);
 
 saveCart();
+updateSummary();
 
         // ✅ Toast
         showToast(title + " removed from cart", "error");

@@ -450,7 +450,7 @@ nav .active::after{
 .container{
     width: 100%;
     max width: 1000px;
-    margin: auto;
+    margin : auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1431,4 +1431,66 @@ select{
 
 #toast i{
     font-size:22px;
+}
+
+
+/* HOME PRODUCT HORIZONTAL SCROLL */
+
+.main {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.main .container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 25px auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 20px;
+    padding: 15px 20px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    flex-wrap: nowrap;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+/* Fixed card width */
+.main .container .card {
+    flex: 0 0 220px;
+    width: 220px;
+    left: 0;
+    margin: 0;
+    scroll-snap-align: start;
+}
+
+/* Scrollbar design */
+.main .container::-webkit-scrollbar {
+    height: 7px;
+}
+
+.main .container::-webkit-scrollbar-thumb {
+    background: #a87952;
+    border-radius: 10px;
+}
+
+.main .container::-webkit-scrollbar-track {
+    background: #eee3d9;
+}
+.main .container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    scroll-behavior: auto;
+    gap: 20px;
+}
+
+.main .container .card {
+    flex: 0 0 220px;
 }

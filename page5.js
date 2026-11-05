@@ -125,7 +125,8 @@ function updateSummary(){
 
     });
     let delivery;
-    note.classList.remove("note", "notei");
+let note = document.querySelector("#note");
+note.classList.remove("note", "notei");
     if(subtotal<200){
         let dly=document.querySelector("#dly");
         let note=document.querySelector("#note");
