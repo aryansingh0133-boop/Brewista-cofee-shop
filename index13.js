@@ -16,12 +16,10 @@ document.querySelectorAll(
             qty: 1
         };
 
-        // Existing cart read
         let cart = JSON.parse(
             localStorage.getItem("cart")
         ) || [];
 
-        // Check same product
         let existing = cart.find(
             item => item.title.toLowerCase() ===
                     product.title.toLowerCase()
@@ -33,14 +31,46 @@ document.querySelectorAll(
             cart.push(product);
         }
 
-        // Save cart
         localStorage.setItem(
             "cart",
             JSON.stringify(cart)
         );
 
-        alert(product.title + " added to cart!");
+        // Show popup
+        showToast(product.title + " added to cart", "success");
 
     });
 
 });
+
+function showToast(message, type = "success") {
+
+    const toast = document.getElementById("toast");
+    const text = document.getElementById("toastText");
+    const icon = document.getElementById("toastIcon");
+
+    if (!toast || !text || !icon) {
+        console.error("Toast HTML elements not found!");
+        return;
+    }
+
+    text.innerText = message;
+
+    toast.classList.remove("success", "error");
+
+    if (type === "success") {
+        toast.classList.add("success");
+        icon.className = "fa-solid fa-circle-check";
+    } else {
+        toast.classList.add("error");
+        icon.className = "fa-solid fa-trash";
+    }
+
+    toast.classList.add("show");
+
+    clearTimeout(toast.timer);
+
+    toast.timer = setTimeout(() => {
+        toast.classList.remove("show");
+    }, 2000);
+}
